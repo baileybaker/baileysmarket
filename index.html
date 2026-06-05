@@ -82,14 +82,14 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 3rem;
-      background: var(--ink);
+      background: var(--chartreuse);
       backdrop-filter: blur(10px);
-      border-bottom: 6px solid var(--chartreuse);
+      border-bottom: 6px solid var(--ink);
     }
     nav::after {
       content: '';
       position: absolute; bottom: -4px; left: 0; right: 0; height: 1px;
-      background: repeating-linear-gradient(90deg, var(--indigo) 10, var(--orange) 20px, transparent 8px, transparent 14px);
+      background: repeating-linear-gradient(90deg, var(--indigo) 1, var(--orange) 2px, transparent 8px, transparent 14px);
     }
     .nav-logo {
       font-family: var(--font-display);
@@ -99,10 +99,10 @@
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: 1rem; font-weight: 400;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream);
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--periwinkle);
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--periwinkle); }
+    .nav-links a:hover { color: var(--orange); }
 
     /* ── HERO ── */
     .hero {
