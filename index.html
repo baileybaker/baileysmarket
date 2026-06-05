@@ -23,7 +23,7 @@
       --forest:     #274D40;
       --ink:        #180D07;
       --white:      #FFFFFF;
-      --font-display: 'Playfair Sans', serif, font weight: 600;
+      --font-display: 'Georgia', serif;
       --font-body:    'Montserrat', sans-serif;
     }
 
@@ -82,7 +82,7 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 3rem;
-      background: rgba(251,245,190,0.95);
+      background: var(--ink);
       backdrop-filter: blur(10px);
       border-bottom: 2px solid var(--chartreuse);
     }
@@ -94,15 +94,15 @@
     .nav-logo {
       font-family: var(--font-display);
       font-size: 1.6rem; font-weight: 700;
-      letter-spacing: -0.04em; color: var(--ink);
+      letter-spacing: -0.04em; color: var(--cream);
     }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: 0.65rem; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--olive);
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream);
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--teal); }
+    .nav-links a:hover { color: var(--teal-lt); }
 
     /* ── HERO ── */
     .hero {
