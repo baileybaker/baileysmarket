@@ -23,6 +23,7 @@
       --forest:     #274D40;
       --ink:        #180D07;
       --white:      #FFFFFF;
+      --blush-lt:   #FEA3AA;
       --font-display: 'Georgia', serif;
       --font-body:    'Montserrat', sans-serif;
     }
@@ -82,9 +83,9 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 3rem;
-      background: var(--blush);
+      background: var(--lavender);
       backdrop-filter: blur(10px);
-      border-bottom: 8px solid var(--forest);
+      border-bottom: 8px solid var(--olive);
     }
     nav::after {
       content: '';
@@ -94,15 +95,15 @@
     .nav-logo {
       font-family: var(--font-display);
       font-size: 2rem; font-weight: 800;
-      letter-spacing: -0.04em; color: var(--indigo);
+      letter-spacing: -0.04em; color: var(--ink);
     }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: 1rem; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--forest);
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink);
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--indigo); }
+    .nav-links a:hover { color: var(--orange); }
 
     /* ── HERO ── */
     .hero {
@@ -111,7 +112,7 @@
       padding-top: 68px;
     }
     .hero-left {
-      background: var(--teal);
+      background: var(--mauve);
       position: relative; overflow: hidden;
       display: flex; flex-direction: column; justify-content: center;
       padding: 5rem 4rem 5rem 5rem;
@@ -128,25 +129,25 @@
       content: '';
       position: absolute; bottom: -100px; right: -80px;
       width: 380px; height: 380px; border-radius: 50%;
-      background: var(--teal-lt); opacity: 0.50;
+      background: var(--lavender); opacity: 0.50;
       pointer-events: none;
     }
     .hero-eyebrow {
       font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase;
-      font-weight: 700; color: var(--chartreuse); margin-bottom: 1.2rem;
+      font-weight: 700; color: var(--orange); margin-bottom: 1.2rem;
       position: relative; z-index: 1;
     }
     .hero-title {
       font-family: var(--font-display);
       font-size: clamp(3.2rem, 5.5vw, 6rem);
       font-weight: 700; letter-spacing: -0.04em; line-height: 0.93;
-      color: var(--blush); margin-bottom: 1.8rem;
+      color: var(--forest); margin-bottom: 1.8rem;
       position: relative; z-index: 1;
     }
-    .hero-title em { font-style: normal; color: var(--chartreuse); }
+    .hero-title em { font-style: normal; color: var(--orange); }
     .hero-sub {
       font-size: 1rem; letter-spacing: -0.01em; line-height: 1.8;
-      color: var(--blush); max-width: 340px; margin-bottom: 2.8rem;
+      color: var(--forest); max-width: 340px; margin-bottom: 2.8rem;
       position: relative; z-index: 1;
     }
     .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
