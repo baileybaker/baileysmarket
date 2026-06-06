@@ -34,7 +34,7 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 3rem;
-      background: var(--cream);
+      background: var(--guava);
       border-bottom: 5px solid var(--periwinkle);
     }
     .nav-logo { font-family: var(--font-display); font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--periwinkle); }
@@ -53,22 +53,22 @@
     .hero-left::before {
       content: ''; position: absolute; inset: 0; pointer-events: none;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 0 Q10 15 0 30 Q-10 45 0 60 L8 60 Q18 45 8 30 Q-2 15 8 0Z' fill='rgba(255,255,255,0.07)'/%3E%3Cpath d='M20 0 Q30 15 20 30 Q10 45 20 60 L28 60 Q38 45 28 30 Q18 15 28 0Z' fill='rgba(255,255,255,0.07)'/%3E%3Cpath d='M40 0 Q50 15 40 30 Q30 45 40 60 L48 60 Q58 45 48 30 Q38 15 48 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E");
-      background-size: 30px 30px;
+      background-size: 130px 130px;
     }
     .hero-left::after {
       content: ''; position: absolute; bottom: -110px; right: -90px;
       width: 400px; height: 400px; border-radius: 50%;
-      background: var(--hot-pink); opacity: 0.22; pointer-events: none;
+      background: var(--guava); opacity: 0.22; pointer-events: none;
     }
-    .hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--hot-pink); margin-bottom: 1.2rem; position: relative; z-index: 1; }
+    .hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--orange); margin-bottom: 1.2rem; position: relative; z-index: 1; }
     .hero-title { font-family: var(--font-display); font-size: clamp(3.2rem, 5.5vw, 6rem); font-weight: 700; letter-spacing: -0.03em; line-height: 0.93; color: var(--periwinkle); margin-bottom: 1.8rem; position: relative; z-index: 1; }
-    .hero-title em { font-style: normal; color: var(--hot-pink); }
+    .hero-title em { font-style: normal; color: var(--orange); }
     .hero-sub { font-size: 0.8rem; line-height: 1.8; color: var(--ink); max-width: 340px; margin-bottom: 2.8rem; position: relative; z-index: 1; }
     .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
 
     .btn { display: inline-block; font-size: 0.63rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; padding: 0.9rem 2rem; border-radius: 2px; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; border: 2px solid transparent; }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
-    .btn-primary { background: var(--hot-pink); color: var(--cream); border-color: var(--pink); }
+    .btn-primary { background: var(--periwinkle); color: var(--cream); border-color: var(--orange); }
     .btn-outline  { background: transparent; color: var(--periwinkle); border-color: var(--periwinkle); }
     .btn-dark     { background: var(--ink); color: var(--cream); }
     .btn-yellow   { background: var(--yellow); color: var(--ink); border-color: var(--ink); }
