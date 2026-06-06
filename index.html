@@ -84,12 +84,12 @@
       padding: 1rem 3rem;
       background: var(--blush);
       backdrop-filter: blur(10px);
-      border-bottom: 6px solid var(--forest);
+      border-bottom: 8px solid var(--forest);
     }
     nav::after {
       content: '';
       position: absolute; bottom: -4px; left: 0; right: 0; height: 2px;
-      background: repeating-linear-gradient(90deg, var(--teal-lt) 0, var(--coral) 10px, transparent 0px, transparent 0px);
+      background: repeating-linear-gradient(90deg, var(--chartreuse) 0, var(--coral) 10px, transparent 6px, transparent 14px);
     }
     .nav-logo {
       font-family: var(--font-display);
@@ -111,7 +111,7 @@
       padding-top: 68px;
     }
     .hero-left {
-      background: var(--chartreuse);
+      background: var(--teal);
       position: relative; overflow: hidden;
       display: flex; flex-direction: column; justify-content: center;
       padding: 5rem 4rem 5rem 5rem;
@@ -128,25 +128,25 @@
       content: '';
       position: absolute; bottom: -100px; right: -80px;
       width: 380px; height: 380px; border-radius: 50%;
-      background: var(--indigo); opacity: 0.50;
+      background: var(--teal-lt); opacity: 0.50;
       pointer-events: none;
     }
     .hero-eyebrow {
       font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase;
-      font-weight: 700; color: var(--indigo); margin-bottom: 1.2rem;
+      font-weight: 700; color: var(--chartreuse); margin-bottom: 1.2rem;
       position: relative; z-index: 1;
     }
     .hero-title {
       font-family: var(--font-display);
       font-size: clamp(3.2rem, 5.5vw, 6rem);
       font-weight: 700; letter-spacing: -0.04em; line-height: 0.93;
-      color: var(--ink); margin-bottom: 1.8rem;
+      color: var(--blush); margin-bottom: 1.8rem;
       position: relative; z-index: 1;
     }
-    .hero-title em { font-style: normal; color: var(--indigo); }
+    .hero-title em { font-style: normal; color: var(--chartreuse); }
     .hero-sub {
       font-size: 1rem; letter-spacing: -0.01em; line-height: 1.8;
-      color: var(--forest); max-width: 340px; margin-bottom: 2.8rem;
+      color: var(--blush); max-width: 340px; margin-bottom: 2.8rem;
       position: relative; z-index: 1;
     }
     .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
