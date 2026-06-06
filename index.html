@@ -9,7 +9,7 @@
     :root {
       --lavender:   #DED0F3;
       --periwinkle: #9A95E8;
-      --indigo:     #6F6DED;
+      --indigo:     #585dff;
       --mauve:      #BE84BA;
       --blush:      #FEA3AA;
       --coral:      #FF7A90;
@@ -82,24 +82,24 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 3rem;
-      background: var(--cream);
+      background: var(--indigo;
       backdrop-filter: blur(10px);
-      border-bottom: 6px solid var(--indigo);
+      border-bottom: 6px solid var(--cream);
     }
     nav::after {
       content: '';
       position: absolute; bottom: -4px; left: 0; right: 0; height: 2px;
-      background: repeating-linear-gradient(90deg, var(--chartreuse) 0, var(--chartreuse) 10px, transparent 8px, transparent 14px);
+      background: repeating-linear-gradient(90deg, var(--indigo) 0, var(--indigo) 10px, transparent 8px, transparent 14px);
     }
     .nav-logo {
       font-family: var(--font-display);
       font-size: 2rem; font-weight: 800;
-      letter-spacing: -0.04em; color: var(--chartreuse);
+      letter-spacing: -0.04em; color: var(--lavender);
     }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: 1rem; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo);
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream);
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--chartreuse); }
