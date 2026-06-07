@@ -70,7 +70,7 @@
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
     .btn-primary { background: var(--orange); color: var(--cream); border-color: var(--periwinkle); }
     .btn-outline  { background: transparent; color: var(--periwinkle); border-color: var(--periwinkle); }
-    .btn-dark     { background: var(--ink); color: var(--cream); }
+    .btn-dark     { background: var(--hot-pink); color: var(--yellow); }
     .btn-yellow   { background: var(--yellow); color: var(--ink); border-color: var(--ink); }
     .btn-guava    { background: var(--guava); color: var(--ink); border-color: var(--ink); }
     .btn-orange   { background: var(--orange); color: var(--cream); }
@@ -149,10 +149,10 @@
     .philosophy::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12'%3E%3Cpath d='M0 6 L10 0 L20 6 L30 0 L40 6 L40 12 L30 6 L20 12 L10 6 L0 12Z' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E"); }
     .philosophy .section-label { color: var(--pink); position: relative; }
     .philosophy .section-title { color: var(--pink); position: relative; }
-    .philosophy .section-desc { color: rgba(255,248,240,0.72); max-width: 100%; position: relative; }
+    .philosophy .section-desc { color: var(--pink); max-width: 100%; position: relative; }
     .phil-pillars { display: flex; flex-direction: column; gap: 1.6rem; position: relative; }
     .pillar { display: flex; gap: 1.25rem; align-items: flex-start; }
-    .pillar-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; letter-spacing: -0.05em; color: var(--sky); line-height: 1; min-width: 2.8rem; }
+    .pillar-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; letter-spacing: -0.05em; color: var(--yellow); line-height: 1; min-width: 2.8rem; }
     .pillar-text h4 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.3rem; }
     .pillar-text p { font-size: 0.73rem; line-height: 1.72; color: rgba(255,248,240,0.62); }
 
@@ -165,15 +165,15 @@
     .photo-cell:hover .photo-cell-label { opacity: 1; }
 
     /* MARKET */
-    .market-section { background: var(--orchid); padding: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); position: relative; overflow: hidden; }
+    .market-section { background: var(--yellow); padding: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; border-top: 3px solid var(--guava); border-bottom: 3px solid var(--guava); position: relative; overflow: hidden; }
     .market-section::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: repeating-conic-gradient(rgba(0,0,0,0.06) 0% 25%, transparent 0% 50%); background-size: 26px 26px; }
-    .market-section .section-label { color: var(--forest); position: relative; }
-    .market-section .section-title { color: var(--ink); font-size: clamp(1.8rem, 2.8vw, 3rem); position: relative; }
-    .market-section .section-desc { color: var(--forest); max-width: 100%; position: relative; }
+    .market-section .section-label { color: var(--hot-pink); position: relative; }
+    .market-section .section-title { color: var(--periwinkle); font-size: clamp(1.8rem, 2.8vw, 3rem); position: relative; }
+    .market-section .section-desc { color: var(--periwinkle); max-width: 100%; position: relative; }
     .market-details { display: flex; flex-direction: column; gap: 1.4rem; position: relative; }
-    .market-item { border-left: 3px solid var(--ink); padding-left: 1.2rem; }
-    .market-item h4 { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--forest); margin-bottom: 0.25rem; }
-    .market-item p { font-size: 0.77rem; line-height: 1.65; color: var(--ink); }
+    .market-item { border-left: 3px solid var(--hot-pink); padding-left: 1.2rem; }
+    .market-item h4 { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--periwinkle); margin-bottom: 0.25rem; }
+    .market-item p { font-size: 0.77rem; line-height: 1.65; color: var(--periwinkle); }
 
     /* WAITLIST */
     .waitlist { background: var(--ink); padding: 5.5rem 5rem; text-align: center; position: relative; overflow: hidden; }
@@ -188,7 +188,7 @@
     .waitlist-form button:hover { background: var(--orange); color: var(--cream); }
 
     /* INSTAGRAM */
-    .insta-section { background: var(--orchid); padding: 4rem 5rem; border-bottom: 3px solid var(--ink); position: relative; overflow: hidden; }
+    .insta-section { background: var(--sky); padding: 4rem 5rem; border-bottom: 3px solid var(--guava); position: relative; overflow: hidden; }
     .insta-section::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cellipse cx='30' cy='30' rx='8' ry='14' fill='none' stroke='rgba(123,127,232,0.18)' stroke-width='1.5'/%3E%3C/svg%3E"); background-size: 60px 60px; }
     .insta-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.8rem; position: relative; }
     .insta-header .section-label { margin-bottom: 0; color: var(--forest); }
