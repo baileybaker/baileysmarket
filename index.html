@@ -111,8 +111,8 @@
     .lc-2:hover { background: var(--orange); color: var(--yellow); }
     .lc-3 { background: var(--periwinkle); color: var(--pink); }
     .lc-3:hover { background: var(--hot-pink); color: var(--yellow); }
-    .lc-4 { background: var(--orange); color: var(--sky); }
-    .lc-4:hover { background: var(--orchid); color: var(--forest); }
+    .lc-4 { background: var(--orchid); color: var(--orange); }
+    .lc-4:hover { background: var(--orange); color: var(--sky); }
     .lc-5 { background: var(--yellow); color: var(--hot-pink); }
     .lc-5:hover { background: var(--pink); color: var(--orange); }
     .lc-6 { background: var(--forest); color: var(--sky); }
@@ -137,23 +137,23 @@
     .about-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
     .about-img { overflow: hidden; }
     .about-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .about-content { background: var(--yellow); padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+    .about-content { background: var(--pink); padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
     .about-content::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: repeating-linear-gradient(-45deg, transparent 0 10px, rgba(0,0,0,0.05) 10px 20px); }
-    .about-content .section-label { color: var(--forest); position: relative; }
-    .about-content .section-title { color: var(--ink); position: relative; }
-    .about-content .section-desc { color: var(--forest); max-width: 100%; position: relative; }
+    .about-content .section-label { color: var(--indigo); position: relative; }
+    .about-content .section-title { color: var(--indigo); position: relative; }
+    .about-content .section-desc { color: var(--indigo); max-width: 100%; position: relative; }
     .about-content .btn { position: relative; z-index: 1; align-self: flex-start; }
 
     /* PHILOSOPHY */
     .philosophy { background: var(--forest); position: relative; overflow: hidden; padding: 6.5rem 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
     .philosophy::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12'%3E%3Cpath d='M0 6 L10 0 L20 6 L30 0 L40 6 L40 12 L30 6 L20 12 L10 6 L0 12Z' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E"); }
     .philosophy .section-label { color: var(--pink); position: relative; }
-    .philosophy .section-title { color: var(--cream); position: relative; }
+    .philosophy .section-title { color: var(--pink); position: relative; }
     .philosophy .section-desc { color: rgba(255,248,240,0.72); max-width: 100%; position: relative; }
     .phil-pillars { display: flex; flex-direction: column; gap: 1.6rem; position: relative; }
     .pillar { display: flex; gap: 1.25rem; align-items: flex-start; }
-    .pillar-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; letter-spacing: -0.05em; color: var(--yellow); line-height: 1; min-width: 2.8rem; }
-    .pillar-text h4 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--cream); margin-bottom: 0.3rem; }
+    .pillar-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; letter-spacing: -0.05em; color: var(--sky); line-height: 1; min-width: 2.8rem; }
+    .pillar-text h4 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.3rem; }
     .pillar-text p { font-size: 0.73rem; line-height: 1.72; color: rgba(255,248,240,0.62); }
 
     /* PHOTO STRIP */
@@ -165,7 +165,7 @@
     .photo-cell:hover .photo-cell-label { opacity: 1; }
 
     /* MARKET */
-    .market-section { background: var(--pink); padding: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); position: relative; overflow: hidden; }
+    .market-section { background: var(--orchid); padding: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); position: relative; overflow: hidden; }
     .market-section::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: repeating-conic-gradient(rgba(0,0,0,0.06) 0% 25%, transparent 0% 50%); background-size: 26px 26px; }
     .market-section .section-label { color: var(--forest); position: relative; }
     .market-section .section-title { color: var(--ink); font-size: clamp(1.8rem, 2.8vw, 3rem); position: relative; }
@@ -178,13 +178,13 @@
     /* WAITLIST */
     .waitlist { background: var(--ink); padding: 5.5rem 5rem; text-align: center; position: relative; overflow: hidden; }
     .waitlist::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: radial-gradient(circle, rgba(255,184,0,0.13) 1.5px, transparent 1.5px); background-size: 26px 26px; }
-    .waitlist .section-label { color: var(--yellow); position: relative; }
+    .waitlist .section-label { color: var(--guava); position: relative; }
     .waitlist .section-title { color: var(--cream); position: relative; }
     .waitlist .section-desc { color: rgba(255,248,240,0.65); margin: 0 auto 2.5rem; position: relative; }
-    .waitlist-form { display: flex; max-width: 440px; margin: 0 auto; border: 2.5px solid var(--yellow); position: relative; }
+    .waitlist-form { display: flex; max-width: 440px; margin: 0 auto; border: 2.5px solid var(--guava); position: relative; }
     .waitlist-form input { flex: 1; padding: 0.9rem 1.25rem; font-family: var(--font-body); font-size: 0.75rem; border: none; outline: none; background: rgba(255,248,240,0.07); color: var(--cream); }
     .waitlist-form input::placeholder { color: rgba(255,248,240,0.35); }
-    .waitlist-form button { background: var(--yellow); color: var(--ink); border: none; padding: 0.9rem 1.5rem; font-family: var(--font-body); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+    .waitlist-form button { background: var(--guava); color: var(--ink); border: none; padding: 0.9rem 1.5rem; font-family: var(--font-body); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
     .waitlist-form button:hover { background: var(--orange); color: var(--cream); }
 
     /* INSTAGRAM */
@@ -203,12 +203,12 @@
     footer { background: var(--ink); padding: 4rem 5rem 2rem; position: relative; overflow: hidden; }
     footer::before { content:''; position:absolute; inset:0; pointer-events:none; background-image: repeating-linear-gradient(180deg, transparent 0 16px, rgba(255,255,255,0.025) 16px 32px); }
     .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 3.5rem; margin-bottom: 3rem; position: relative; }
-    .footer-brand-logo { font-family: var(--font-display); font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--yellow); margin-bottom: 0.8rem; display: block; }
+    .footer-brand-logo { font-family: var(--font-display); font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--cream); margin-bottom: 0.8rem; display: block; }
     .footer-brand p { font-size: 0.7rem; line-height: 1.75; color: rgba(255,248,240,0.45); margin-bottom: 1.2rem; }
     .footer-social { display: flex; gap: 0.7rem; }
     .footer-social a { width: 32px; height: 32px; border: 1px solid rgba(255,248,240,0.2); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: rgba(255,248,240,0.5); transition: all 0.2s; }
-    .footer-social a:hover { border-color: var(--yellow); color: var(--yellow); }
-    .footer-col h5 { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 1.2rem; }
+    .footer-social a:hover { border-color: var(--guava); color: var(--guava); }
+    .footer-col h5 { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--guava); margin-bottom: 1.2rem; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
     .footer-col a { font-size: 0.72rem; color: rgba(255,248,240,0.5); transition: color 0.2s; }
     .footer-col a:hover { color: var(--cream); }
