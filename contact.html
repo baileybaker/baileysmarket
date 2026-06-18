@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bailey's Market</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><img src="assets/logo-header.png" alt="Bailey's Market" class="nav-logo-img" /></a>
+    <ul class="nav-links">
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">The Farm</a></li>
+      <li><a href="markets.html">Find Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="subpage-hero">
+    <p class="section-label">Get in touch</p>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-desc">Questions, wholesale inquiries, or just want to say hi — reach out anytime.</p>
+  </section>
+
+  <section class="subpage-body">
+    <p style="text-align:center; font-size:1.1rem;">
+      <a href="mailto:info@baileysmarket.com" class="btn btn-primary">info@baileysmarket.com</a>
+    </p>
+
+    <p style="text-align:center; margin-top:1.5rem;">
+      Follow along on social for the day-to-day on the farm.
+    </p>
+
+    <div class="footer-social" style="justify-content:center; margin:1.2rem auto 0;">
+      <a href="#" target="_blank" title="Instagram">ig</a>
+      <a href="#" target="_blank" title="TikTok">tt</a>
+      <a href="#" target="_blank" title="Facebook">fb</a>
+      <a href="#" target="_blank" title="Pinterest">pi</a>
+      <a href="#" target="_blank" title="YouTube">yt</a>
+    </div>
+  </section>
+
+  <section class="market-section">
+    <div>
+      <p class="section-label">Find Us</p>
+      <h2 class="section-title fade-up">A few ways to connect.</h2>
+      <p class="section-desc fade-up">Shop online, catch us at market, or reach out directly for wholesale and bulk orders.</p>
+    </div>
+    <div class="market-details">
+      <div class="market-item fade-up"><h4>Shop</h4><p>Browse all product lines and current availability.<br><a href="shop.html">Visit the Shop →</a></p></div>
+      <div class="market-item fade-up"><h4>Market Calendar</h4><p>See where and when to find us in person this season.<br><a href="markets.html">Full Schedule →</a></p></div>
+      <div class="market-item fade-up"><h4>Wholesale &amp; Bulk</h4><p>Restaurants and retailers, inquire for pricing and availability.<br><a href="mailto:info@baileysmarket.com">Email Us →</a></p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-footer.png" alt="Bailey's Market" class="footer-brand-logo-img" />
+        <p>Grown and produced in Blissfield, MI<br><br>Natural from Seed to Table.<br>Locally grown &amp; produced.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank" title="Instagram">ig</a>
+          <a href="#" target="_blank" title="TikTok">tt</a>
+          <a href="#" target="_blank" title="Etsy">et</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop/wholesale.html">Wholesale</a></li>
+          <li><a href="shop/etsy.html">Etsy Shop</a></li>
+          <li><a href="shop/pickup.html">Local Pickup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="about.html">The Farm</a></li>
+          <li><a href="markets.html">Market Schedule</a></li>
+          <li><a href="contact.html">Contact &amp; Wholesale</a></li>
+          <li><a href="#" target="_blank">Etsy Shop</a></li>
+          <li><a href="mailto:info@baileysmarket.com">info@baileysmarket.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bailey's Market — Blissfield, MI.</p>
+      <p class="footer-built">Hand-coded website created and designed completely by Bailey. Yes, she has a nerdy side!</p>
+      <p>Natural from Seed to Table. Locally grown &amp; produced.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
