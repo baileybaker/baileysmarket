@@ -1175,5 +1175,206 @@ footer::before {
 
 
 /* ============================================================
+   20. THE FARM PAGE — "FIELD LOG" SYSTEM
+   ============================================================
+   Used only on the-farm.html. Quiet, ledger-like, no gradients
+   or pattern overlays — practices read like field notes.
+   ============================================================ */
+
+.field-hero {
+  background: var(--cream);
+  padding: 9.5rem var(--section-pad-h) 3.5rem;
+  border-bottom: var(--border-main);
+}
+
+.field-hero .section-label { color: var(--orange); }
+.field-hero .section-title { color: var(--ink); max-width: 720px; }
+.field-hero .section-desc  { color: var(--ink); opacity: 0.7; max-width: 560px; margin-bottom: 0; }
+
+.field-rows {
+  background: var(--cream);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  border-bottom: 2px solid var(--ink);
+  min-height: 360px;
+}
+
+.field-row:last-child { border-bottom: var(--border-main); }
+
+.field-row.reverse { grid-template-columns: 1.1fr 0.9fr; }
+.field-row.reverse .field-row-img  { order: 2; }
+.field-row.reverse .field-row-text { order: 1; }
+
+.field-row-img { overflow: hidden; border-right: 2px solid var(--ink); }
+.field-row.reverse .field-row-img { border-right: none; border-left: 2px solid var(--ink); }
+.field-row-img img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 360px; }
+
+.field-row-text {
+  padding: 3.2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--ink);
+}
+
+.field-row-index {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  margin-bottom: 0.9rem;
+}
+
+.field-row-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.field-row-text p {
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: var(--ink);
+  opacity: 0.78;
+  max-width: 440px;
+}
+
+.field-close {
+  background: var(--ink);
+  padding: 4.5rem var(--section-pad-h);
+  text-align: center;
+}
+
+.field-close .section-label { color: var(--guava); }
+.field-close .section-title { color: var(--cream); }
+.field-close .section-desc  { color: rgba(255,248,240,0.6); margin: 0 auto 2rem; }
+
+
+/* ============================================================
+   21. ABOUT BAILEY PAGE — "JOURNAL ENTRY" SYSTEM
+   ============================================================
+   Used only on about-bailey.html. Warmer and more personal —
+   distinct from the Field Log system above. No borders, soft
+   color washes, pull-quote style section openers.
+   ============================================================ */
+
+.journal-hero {
+  background: var(--periwinkle);
+  padding: 10rem var(--section-pad-h) 4.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.journal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cellipse cx='30' cy='30' rx='8' ry='14' fill='none' stroke='rgba(255,255,255,0.12)' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.journal-hero .section-label { color: var(--yellow); position: relative; }
+.journal-hero .section-title { color: var(--cream); max-width: 640px; position: relative; }
+.journal-hero .section-desc  { color: rgba(255,248,240,0.78); max-width: 520px; margin-bottom: 0; position: relative; }
+
+.journal-rows { background: var(--cream); }
+
+.journal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.journal-row.reverse .journal-row-img  { order: 2; }
+.journal-row.reverse .journal-row-text { order: 1; }
+
+.journal-row:nth-child(odd)  { background: var(--cream); }
+.journal-row:nth-child(even) { background: var(--pink); }
+
+.journal-row-img { overflow: hidden; aspect-ratio: 4 / 3; }
+.journal-row-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.journal-row-text {
+  padding: 4rem 4.5rem;
+}
+
+.journal-row-eyebrow {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.7rem;
+}
+
+.journal-row-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--periwinkle);
+  margin-bottom: 1.1rem;
+}
+
+.journal-row-text p {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--periwinkle);
+  max-width: 460px;
+}
+
+.journal-close {
+  background: var(--forest);
+  padding: 5rem var(--section-pad-h);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.journal-close::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(180deg, transparent 0 16px, rgba(255,255,255,0.025) 16px 32px);
+}
+
+.journal-close .section-label { color: var(--pink); position: relative; }
+.journal-close .section-title { color: var(--cream); position: relative; }
+.journal-close .section-desc  { color: rgba(255,248,240,0.6); margin: 0 auto 2rem; position: relative; }
+
+
+/* ============================================================
+   22. RESPONSIVE — SUBPAGE SYSTEMS (max 900px)
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .field-row, .field-row.reverse {
+    grid-template-columns: 1fr;
+  }
+  .field-row-img, .field-row.reverse .field-row-img {
+    order: 1; border-right: none; border-left: none; border-bottom: 2px solid var(--ink);
+  }
+  .field-row-text, .field-row.reverse .field-row-text { order: 2; padding: 2.5rem 2rem; }
+  .field-row-img img { min-height: 260px; }
+
+  .journal-row, .journal-row.reverse { grid-template-columns: 1fr; }
+  .journal-row-img, .journal-row.reverse .journal-row-img { order: 1; }
+  .journal-row-text, .journal-row.reverse .journal-row-text { order: 2; padding: 3rem 2rem; }
+
+  .field-hero, .journal-hero { padding-left: 2rem; padding-right: 2rem; }
+}
+
+
+/* ============================================================
    END OF STYLESHEET — Bailey's Market v1.1
    ============================================================ */
