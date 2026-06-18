@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wholesale — Bailey's Market. Blissfield, MI.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html"><img src="../assets/logo-header.png" alt="Bailey's Market" class="nav-logo-img" /></a>
+    <ul class="nav-links">
+      <li><a href="../shop.html">Shop</a></li>
+      <li><a href="../about.html">The Farm</a></li>
+      <li><a href="../markets.html">Find Us</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="subpage-hero">
+    <p class="section-label">For Restaurants &amp; Retail</p>
+    <h1 class="section-title">Wholesale</h1>
+    <p class="section-desc">Fresh, chemical-free product for local kitchens and shops — grown to order and delivered on a schedule that works for you.</p>
+  </section>
+
+  <section class="subpage-body">
+    <p>Bailey's Market supplies local restaurants, cafes, and shops with fresh herb bundles, specialty produce, and cut flowers grown right here in Blissfield. Everything is harvested to order — no warehouse, no middleman, just what came out of the ground that week.</p>
+    <p>Standing weekly orders and one-off case orders are both welcome. Availability shifts with the season, so the best way to start is a quick conversation about what you're looking for and when.</p>
+    <p>Wholesale details, current product availability, and ordering information are coming together here soon. In the meantime, reach out directly and we'll get you sorted.</p>
+    <a href="../contact.html" class="btn btn-primary">Inquire About Wholesale</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/logo-footer.png" alt="Bailey's Market" class="footer-brand-logo-img" />
+        <p>Grown and produced in Blissfield, MI<br><br>Natural from Seed to Table.<br>Locally grown &amp; produced.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram">ig</a>
+          <a href="https://www.tiktok.com/" target="_blank" title="TikTok">tt</a>
+          <a href="https://www.etsy.com/shop/BaileysMarket" target="_blank" title="Etsy">et</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="wholesale.html">Wholesale</a></li>
+          <li><a href="etsy.html">Etsy Shop</a></li>
+          <li><a href="pickup.html">Local Pickup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../about.html">The Farm</a></li>
+          <li><a href="../markets.html">Market Schedule</a></li>
+          <li><a href="../contact.html">Contact &amp; Wholesale</a></li>
+          <li><a href="https://www.etsy.com/shop/BaileysMarket" target="_blank">Etsy Shop</a></li>
+          <li><a href="mailto:bailey@baileysmarket.com">bailey@baileysmarket.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bailey's Market — Blissfield, MI.</p>
+      <p class="footer-built">Hand-coded website created and designed completely by Bailey. Yes, she has a nerdy side!</p>
+      <p>Natural from Seed to Table. Locally grown &amp; produced.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
