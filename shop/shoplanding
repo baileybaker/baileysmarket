@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Bailey's Market. Blissfield, MI.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><img src="assets/logo-header.png" alt="Bailey's Market" class="nav-logo-img" /></a>
+    <ul class="nav-links">
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">The Farm</a></li>
+      <li><a href="markets.html">Find Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-label">How to buy</p>
+    <h1 class="section-title">Three ways<br>to shop the farm.</h1>
+    <p class="section-desc">However you find us — by the case, by the jar, or in person — every order starts in the same garden. Pick the path that fits.</p>
+  </section>
+
+  <section class="shop-channels">
+    <div class="shop-channel-grid">
+
+      <div class="shop-card sc-1">
+        <div class="shop-card-img">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&auto=format&fit=crop&q=80" alt="Crates of fresh produce ready for delivery" loading="lazy" />
+          <span class="shop-card-badge">Restaurants &amp; Retail</span>
+        </div>
+        <div class="shop-card-body">
+          <div class="shop-card-sub">For Businesses</div>
+          <div class="shop-card-name">Wholesale</div>
+          <p class="shop-card-desc">Fresh herb bundles, specialty produce, and cut flowers for local restaurants, cafes, and shops. Standing orders and one-off case orders both welcome.</p>
+          <a href="shop/wholesale.html" class="shop-card-link">View Wholesale →</a>
+        </div>
+      </div>
+
+      <div class="shop-card sc-2">
+        <div class="shop-card-img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop&q=80" alt="Dried herbs and teas packed in glass jars" loading="lazy" />
+          <span class="shop-card-badge">Ships Year-Round</span>
+        </div>
+        <div class="shop-card-body">
+          <div class="shop-card-sub">Online</div>
+          <div class="shop-card-name">Etsy Shop</div>
+          <p class="shop-card-desc">Dried herbs, loose-leaf teas, spice blends, flour, and gift sets — packed in glass and kraft, shipped to your door wherever you are.</p>
+          <a href="shop/etsy.html" class="shop-card-link">View Etsy Shop →</a>
+        </div>
+      </div>
+
+      <div class="shop-card sc-3">
+        <div class="shop-card-img">
+          <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=700&auto=format&fit=crop&q=80" alt="Farmers market stand with fresh produce" loading="lazy" />
+          <span class="shop-card-badge">Blissfield, MI</span>
+        </div>
+        <div class="shop-card-body">
+          <div class="shop-card-sub">In Person</div>
+          <div class="shop-card-name">Local Pickup</div>
+          <p class="shop-card-desc">Place an order ahead and pick it up at market or arrange a local handoff. The freshest option — straight from harvest to your hands.</p>
+          <a href="shop/pickup.html" class="shop-card-link">View Pickup Orders →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="shop-note">Don't see what you're looking for? CSA-style recipe boxes and direct ordering from this site are coming soon — <a href="contact.html" style="text-decoration:underline;">get in touch</a> in the meantime and we'll sort you out.</p>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-footer.png" alt="Bailey's Market" class="footer-brand-logo-img" />
+        <p>Grown and produced in Blissfield, MI<br><br>Natural from Seed to Table.<br>Locally grown &amp; produced.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram">ig</a>
+          <a href="https://www.tiktok.com/" target="_blank" title="TikTok">tt</a>
+          <a href="https://www.etsy.com/shop/BaileysMarket" target="_blank" title="Etsy">et</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop/wholesale.html">Wholesale</a></li>
+          <li><a href="shop/etsy.html">Etsy Shop</a></li>
+          <li><a href="shop/pickup.html">Local Pickup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="about.html">The Farm</a></li>
+          <li><a href="markets.html">Market Schedule</a></li>
+          <li><a href="contact.html">Contact &amp; Wholesale</a></li>
+          <li><a href="https://www.etsy.com/shop/BaileysMarket" target="_blank">Etsy Shop</a></li>
+          <li><a href="mailto:bailey@baileysmarket.com">bailey@baileysmarket.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bailey's Market — Blissfield, MI.</p>
+      <p class="footer-built">Hand-coded website created and designed completely by Bailey. Yes, she has a nerdy side!</p>
+      <p>Natural from Seed to Table. Locally grown &amp; produced.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
