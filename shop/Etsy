@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etsy Shop — Bailey's Market. Blissfield, MI.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html"><img src="../assets/logo-header.png" alt="Bailey's Market" class="nav-logo-img" /></a>
+    <ul class="nav-links">
+      <li><a href="../shop.html">Shop</a></li>
+      <li><a href="../about.html">The Farm</a></li>
+      <li><a href="../markets.html">Find Us</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="subpage-hero">
+    <p class="section-label">Ships Year-Round</p>
+    <h1 class="section-title">Etsy Shop</h1>
+    <p class="section-desc">Dried herbs, loose-leaf teas, spice blends, flour, and gift sets — packed in glass and kraft, shipped to your door.</p>
+  </section>
+
+  <section class="subpage-body">
+    <p>The Bailey's Market Etsy shop carries everything that travels well: dried culinary herbs and spice blends from Honest Herbs, loose-leaf teas from Wild Kitchen, freshly milled flour and cornmeal from Stone Mill, and curated gift sets from the Harvest Collection.</p>
+    <p>Every order ships in glass or kraft — no plastic — and is packed by hand here on the farm. Since these are shelf-stable goods, the shop stays open year-round, even outside the growing season.</p>
+    <p>The shop is being stocked now. Once live, this page will link straight through to the storefront.</p>
+    <a href="https://www.etsy.com/shop/BaileysMarket" target="_blank" class="btn btn-primary">Visit the Etsy Shop</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/logo-footer.png" alt="Bailey's Market" class="footer-brand-logo-img" />
+        <p>Grown and produced in Blissfield, MI<br><br>Natural from Seed to Table.<br>Locally grown &amp; produced.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram">ig</a>
+          <a href="https://www.tiktok.com/" target="_blank" title="TikTok">tt</a>
+          <a href="https://www.etsy.com/shop/BaileysMarket" target="_blank" title="Etsy">et</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="wholesale.html">Wholesale</a></li>
+          <li><a href="etsy.html">Etsy Shop</a></li>
+          <li><a href="pickup.html">Local Pickup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../about.html">The Farm</a></li>
+          <li><a href="../markets.html">Market Schedule</a></li>
+          <li><a href="../contact.html">Contact &amp; Wholesale</a></li>
+          <li><a href="https://www.etsy.com/shop/BaileysMarket" target="_blank">Etsy Shop</a></li>
+          <li><a href="mailto:bailey@baileysmarket.com">bailey@baileysmarket.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bailey's Market — Blissfield, MI.</p>
+      <p class="footer-built">Hand-coded website created and designed completely by Bailey. Yes, she has a nerdy side!</p>
+      <p>Natural from Seed to Table. Locally grown &amp; produced.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
