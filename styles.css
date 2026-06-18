@@ -213,7 +213,7 @@ nav {
 }
 
 .nav-logo-img {
-  height: 78px;
+  height: 84px;
   width: auto;
   display: block;
 }
@@ -858,7 +858,7 @@ footer::before {
 }
 
 .footer-brand-logo-img {
-  height: 60px;
+  height: 80px;
   width: auto;
   display: block;
   margin-bottom: 0.8rem;
