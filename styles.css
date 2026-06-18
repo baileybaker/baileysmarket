@@ -1376,5 +1376,304 @@ footer::before {
 
 
 /* ============================================================
+   23. FIND US PAGE — "SIGNAL" SYSTEM
+   ============================================================
+   Used only on find-us.html. Modern, social-hub feel — distinct
+   from Field Log (ledger) and Journal Entry (alternating story
+   rows). Built around featured platform cards + simple link list.
+   ============================================================ */
+
+.signal-hero {
+  background: var(--forest);
+  padding: 9.5rem var(--section-pad-h) 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.signal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12'%3E%3Cpath d='M0 6 L10 0 L20 6 L30 0 L40 6 L40 12 L30 6 L20 12 L10 6 L0 12Z' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
+}
+
+.signal-hero .section-label { color: var(--pink); position: relative; }
+.signal-hero .section-title { color: var(--cream); max-width: 680px; position: relative; }
+.signal-hero .section-desc  { color: rgba(255,248,240,0.7); max-width: 540px; margin-bottom: 0; position: relative; }
+
+.signal-featured {
+  background: var(--forest);
+  padding: var(--section-pad-v) var(--section-pad-h) 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.signal-featured::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12'%3E%3Cpath d='M0 6 L10 0 L20 6 L30 0 L40 6 L40 12 L30 6 L20 12 L10 6 L0 12Z' fill='rgba(255,255,255,0.035)'/%3E%3C/svg%3E");
+}
+
+.signal-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  position: relative;
+}
+
+.signal-card {
+  border: 2px solid var(--ink);
+  background: var(--cream);
+  overflow: hidden;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.signal-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+
+.signal-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1.6rem;
+  border-bottom: 2px solid var(--ink);
+  background: var(--yellow);
+}
+
+.signal-card-platform {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.signal-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+
+.signal-card.ig .signal-card-icon { background: var(--hot-pink); color: var(--cream); }
+.signal-card.fb .signal-card-icon { background: var(--forest); color: var(--pink); }
+
+.signal-card-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.signal-card-handle { font-size: 0.65rem; color: rgba(26,15,10,0.5); }
+
+.signal-card-follow {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  transition: background var(--transition-mid), color var(--transition-mid);
+}
+
+.signal-card-follow:hover { background: var(--ink); color: var(--cream); }
+
+.signal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  background: var(--ink);
+}
+
+.signal-card-cell { aspect-ratio: 1; overflow: hidden; position: relative; }
+.signal-card-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition-slow); }
+.signal-card-cell:hover img { transform: scale(1.08); }
+
+.signal-card-foot {
+  padding: 1rem 1.6rem;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: rgba(26,15,10,0.65);
+}
+
+.signal-links {
+  background: var(--forest);
+  padding: 1.5rem var(--section-pad-h) var(--section-pad-v);
+  position: relative;
+  overflow: hidden;
+}
+
+.signal-links::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12'%3E%3Cpath d='M0 6 L10 0 L20 6 L30 0 L40 6 L40 12 L30 6 L20 12 L10 6 L0 12Z' fill='rgba(255,255,255,0.035)'/%3E%3C/svg%3E");
+}
+
+.signal-links-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.signal-links-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid var(--ink);
+  position: relative;
+}
+
+.signal-link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1.7rem;
+  border-right: 2px solid var(--ink);
+  background: var(--cream);
+  transition: background var(--transition-mid);
+}
+
+.signal-link-item:last-child { border-right: none; }
+.signal-link-item:hover { background: var(--pink); }
+.signal-link-item:hover .signal-link-name,
+.signal-link-item:hover .signal-link-arrow { color: var(--ink); }
+
+.signal-link-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  transition: color var(--transition-mid);
+}
+
+.signal-link-arrow {
+  font-size: 1rem;
+  color: var(--ink);
+  transition: color var(--transition-mid);
+}
+
+.signal-cta-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 3px solid var(--yellow);
+}
+
+.signal-cta-block {
+  padding: 3.5rem var(--section-pad-h);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.signal-cta-block.dark { background: var(--ink); }
+.signal-cta-block.light { background: var(--pink); }
+
+.signal-cta-block.dark .section-label { color: var(--yellow); }
+.signal-cta-block.dark .section-title { color: var(--cream); font-size: clamp(1.5rem, 2.4vw, 2.1rem); }
+.signal-cta-block.dark .section-desc  { color: rgba(255,248,240,0.6); margin-bottom: 0.5rem; }
+
+.signal-cta-block.light .section-label { color: var(--forest); }
+.signal-cta-block.light .section-title { color: var(--ink); font-size: clamp(1.5rem, 2.4vw, 2.1rem); }
+.signal-cta-block.light .section-desc  { color: var(--ink); opacity: 0.75; margin-bottom: 0.5rem; }
+
+
+/* ============================================================
+   24. MARKETS PAGE — EXTENDS HOMEPAGE .market-section
+   ============================================================
+   markets.html reuses the homepage's orchid/checkerboard
+   .market-section styling directly (not a new system) — these
+   are small additive pieces for the full-page version: a taller
+   hero treatment and a closing strip in the same family.
+   ============================================================ */
+
+.market-hero {
+  background: var(--orchid);
+  padding: 9.5rem var(--section-pad-h) 4.5rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-guava);
+}
+
+.market-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-conic-gradient(rgba(0,0,0,0.06) 0% 25%, transparent 0% 50%);
+  background-size: 26px 26px;
+}
+
+.market-hero .section-label { color: var(--hot-pink);   position: relative; }
+.market-hero .section-title { color: var(--periwinkle); max-width: 640px; position: relative; }
+.market-hero .section-desc  { color: var(--periwinkle); max-width: 540px; margin-bottom: 0; position: relative; }
+
+.market-list-section {
+  background: var(--orchid);
+  padding: 1rem var(--section-pad-h) var(--section-pad-v);
+  position: relative;
+  overflow: hidden;
+}
+
+.market-list-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-conic-gradient(rgba(0,0,0,0.06) 0% 25%, transparent 0% 50%);
+  background-size: 26px 26px;
+}
+
+.market-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  position: relative;
+  max-width: 760px;
+}
+
+.market-close {
+  background: var(--periwinkle);
+  padding: 4.5rem var(--section-pad-h);
+  text-align: center;
+}
+
+.market-close .section-label { color: var(--yellow); }
+.market-close .section-title { color: var(--cream); }
+.market-close .section-desc  { color: rgba(255,248,240,0.75); margin: 0 auto 2rem; }
+
+
+/* ============================================================
+   25. RESPONSIVE — SIGNAL & MARKETS PAGES (max 900px)
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .signal-featured-grid { grid-template-columns: 1fr; }
+  .signal-links-row     { grid-template-columns: 1fr; }
+  .signal-link-item     { border-right: none; border-bottom: 2px solid var(--ink); }
+  .signal-link-item:last-child { border-bottom: none; }
+  .signal-cta-strip     { grid-template-columns: 1fr; }
+
+  .signal-hero, .market-hero { padding-left: 2rem; padding-right: 2rem; }
+}
+
+
+/* ============================================================
    END OF STYLESHEET — Bailey's Market v1.1
    ============================================================ */
